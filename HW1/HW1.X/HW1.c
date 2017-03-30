@@ -68,5 +68,15 @@ int main() {
             LATAINV = 0x10; // turn off/on LED
         }
         while(!PORTBbits.RB4){;} // stop blinking while push button
+        /* 
+         * // Initial codes
+         * if(PORTBbits.RB4){
+         * _CP0_SET_COUNT(0);
+         * LATAbits.LATA4 = 1;
+         * while(_CP0_GET_COUNT() < 12000){;}
+         * LATAbits.LATA4 = 0;
+         * while(_CP0_GET_COUNT() < 24000){;}
+         * }
+         */
     }
 }
