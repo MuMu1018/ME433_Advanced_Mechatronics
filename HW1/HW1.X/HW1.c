@@ -63,13 +63,10 @@ int main() {
     while(1) {
         // use _CP0_SET_COUNT(0) and _CP0_GET_COUNT() to test the PIC timing
             // remember the core timer runs at half the sysclk   
-         if(PORTBbits.RB4){  // run the loop when button was not pushed
-            _CP0_SET_COUNT(0);  // reset the timer
-            LATAbits.LATA4 = 1;  // turn on LED
-            while(_CP0_GET_COUNT() < 12000){;}
-            LATAbits.LATA4 = 0;  // turn off LED
-            while(_CP0_GET_COUNT() < 24000){;}
-         }
-       
+         _CP0_SET_COUNT(0); // Reset the timer
+        if(_CP0_GET_COUNT() < 12000){  // 24MHz/1kHz = 24000
+            LATAINV = 0x10; // turn off/on LED
+        }
+        while(!PORTBbits.RB4){;} // if button is pushed, stop and wait
     }
 }
