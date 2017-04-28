@@ -89,7 +89,7 @@ int main() {
         // use _CP0_SET_COUNT(0) and _CP0_GET_COUNT() to test the PIC timing
             // remember the core timer runs at half the sysclk
         for(i=0;i<200;i++){
-            setVoltage(CHANNELA,127.5+127.5*sin((float)i*0.01*PI));
+            setVoltage(CHANNELA,127.5+127.5*sin((float)i*0.02*PI));
             setVoltage(CHANNELB,255*(float)i*0.005);
             _CP0_SET_COUNT(0);  // Reset the timer
             while(_CP0_GET_COUNT() < 12000){;}  // 24MHz/1kHz = 24000
