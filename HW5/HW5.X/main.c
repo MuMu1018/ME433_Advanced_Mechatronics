@@ -6,7 +6,7 @@
 #pragma config DEBUG = 0b10 // no debugging
 #pragma config JTAGEN = 0 // no jtag
 #pragma config ICESEL = 0b11 // use PGED1 and PGEC1
-#pragma config PWP = 0x1FF // no write protect
+#pragma config PWP = OFF // no write protect
 #pragma config BWP = 1 // no boot write protect
 #pragma config CP = 1 // no code protect
 
@@ -18,7 +18,7 @@
 #pragma config OSCIOFNC = 1 // disable secondary osc
 #pragma config FPBDIV = 0b00 // divide sysclk freq by 1 for peripheral bus clock
 #pragma config FCKSM = 0b11 // do not enable clock switch
-#pragma config WDTPS = 0 // use slowest wdt
+#pragma config WDTPS = 0b10100 // use slowest wdt
 #pragma config WINDIS = 1 // wdt no window mode
 #pragma config FWDTEN = 0 // wdt disabled
 #pragma config FWDTWINSZ = 0b11 // wdt window at 25%
@@ -65,7 +65,7 @@ char getExpander(){
     i2c_master_send(SLAVE_ADDR<<1); // R/W = 0 = write
     i2c_master_send(0x09); // 0x09 = GPIO
     i2c_master_restart(); 
-    i2c_master_send((SLAVE_ADDR<<1)|1); // R/W = 0 = write
+    i2c_master_send((SLAVE_ADDR<<1)|1); // R/W = 1 = read
     level = i2c_master_recv(); // receive a byte from GP7
     i2c_master_ack(1); // send NACK to slave
     i2c_master_stop();
@@ -79,13 +79,13 @@ int main() {
   
   TRISAbits.TRISA4 = 0; // set LED an output pin
   TRISBbits.TRISB4 = 1; // set push button an input pin
-  LATAbits.LATA4 = 1; // turn LED off
+  LATAbits.LATA4 = 0; // turn LED off
   initExpander();
-  
+  setExpander(0,1);
   __builtin_enable_interrupts();
   
   while(1) {
-      char level = getExpander()>>7;
+      char level = (getExpander()>>7);
       setExpander(0,level);
   }
   return 0;

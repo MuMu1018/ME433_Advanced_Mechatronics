@@ -5,7 +5,7 @@
 #pragma config DEBUG = 0b10 // no debugging
 #pragma config JTAGEN = 0 // no jtag
 #pragma config ICESEL = 0b11 // use PGED1 and PGEC1
-#pragma config PWP = 0x1FF // no write protect
+#pragma config PWP = 0FF // no write protect
 #pragma config BWP = 1 // no boot write protect
 #pragma config CP = 1 // no code protect
 
