@@ -1,6 +1,6 @@
 #include <xc.h>
-#include "i2c_master_noint.h"
 #include <sys/attribs.h>  // __ISR macro
+#include "i2c_master_noint.h"
 
 // DEVCFG0
 #pragma config DEBUG = 0b10 // no debugging
