@@ -190,3 +190,4 @@ void LCD_clearScreen(unsigned short color) {
 		}
 }
 
+
