@@ -5,7 +5,7 @@
     <SystemStartScript/>
   </DisplayManager>
   <General>
-    <HarmonyPath path="../../../microchip/harmony/v1_11"/>
+    <HarmonyPath path="../../../../microchip/harmony/v1_11"/>
     <Processor name=""/>
     <ForceOptimization flag="true"/>
     <MergeStrategy flag="USER_ALL"/>
@@ -106,7 +106,7 @@
       <Template>
         <Name>system_init.c</Name>
         <Path>Source Files/app/system_config/default</Path>
-        <Checksum>18B75900BB471168DECE6822CA3B1EA5</Checksum>
+        <Checksum>E232AAD462520CE547E39B1154E1CF19</Checksum>
       </Template>
       <Template>
         <Name>main.c</Name>
@@ -158,15 +158,15 @@
     </Templates>
     <CompilerItems>
       <C32>
-        <Include value="/Users/mengjiaohong/GitHub/Mengjiao_ME433_2017/HW8/firmware/src"/>
-        <Include value="/Users/mengjiaohong/GitHub/Mengjiao_ME433_2017/HW8/firmware/src/system_config/default"/>
-        <Include value="/Users/mengjiaohong/GitHub/Mengjiao_ME433_2017/HW8/firmware/src/default"/>
+        <Include value="/Users/mengjiaohong/GitHub/Mengjiao_ME433_2017/HW8/HW8/firmware/src"/>
+        <Include value="/Users/mengjiaohong/GitHub/Mengjiao_ME433_2017/HW8/HW8/firmware/src/system_config/default"/>
+        <Include value="/Users/mengjiaohong/GitHub/Mengjiao_ME433_2017/HW8/HW8/firmware/src/default"/>
         <Include value="/Users/mengjiaohong/microchip/harmony/v1_11/framework"/>
-        <Include value="/Users/mengjiaohong/GitHub/Mengjiao_ME433_2017/HW8/firmware/src/system_config/default/framework"/>
+        <Include value="/Users/mengjiaohong/GitHub/Mengjiao_ME433_2017/HW8/HW8/firmware/src/system_config/default/framework"/>
       </C32>
     </CompilerItems>
     <Libraries>
-      <Library value="../../../../../microchip/harmony/v1_11/bin/framework/peripheral/PIC32MX250F128B_peripherals.a"/>
+      <Library value="../../../../../../microchip/harmony/v1_11/bin/framework/peripheral/PIC32MX250F128B_peripherals.a"/>
     </Libraries>
   </Manifest>
 </configuration>

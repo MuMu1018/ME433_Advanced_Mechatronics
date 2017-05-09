@@ -116,23 +116,7 @@ void APP_Initialize ( void )
 {
     /* Place the App state machine in its initial state. */
     appData.state = APP_STATE_INIT;
-
     
-    /* TODO: Initialize your application's state machine and other
-     * parameters.
-     */
-    // set the CP0 CONFIG register to indicate that kseg0 is cacheable (0x3)
-    __builtin_mtc0(_CP0_CONFIG, _CP0_CONFIG_SELECT, 0xa4210583);
-
-    // 0 data RAM access wait states
-    BMXCONbits.BMXWSDRM = 0x0;
-
-    // enable multi vector interrupts
-    INTCONbits.MVEC = 0x1;
-
-    // disable JTAG to get pins back
-    DDPCONbits.JTAGEN = 0;
-
     TRISAbits.TRISA4 = 0; // set LED an output pin
     TRISBbits.TRISB4 = 1; // set push button an input pin
     LATAbits.LATA4 = 0; // turn LED off
@@ -141,6 +125,9 @@ void APP_Initialize ( void )
     LCD_init();
     LCD_clearScreen(BACKGROUND);
     
+    /* TODO: Initialize your application's state machine and other
+     * parameters.
+     */
 }
 
 
@@ -175,7 +162,6 @@ void APP_Tasks ( void )
         case APP_STATE_SERVICE_TASKS:
         {
             unsigned char dataReg8[STRINGLENGTH];
-            int i;
             float Gx,Gy;
             while(1) {
                 _CP0_SET_COUNT(0);
@@ -185,6 +171,8 @@ void APP_Tasks ( void )
                 Gy = getyXL(dataReg8);
                 LCD_drawGravCross(Gx,Gy,WHITE);
             }
+        
+            break;
         }
 
         /* TODO: implement your application state machine.*/

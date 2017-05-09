@@ -88,7 +88,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #pragma config UPLLEN =     ON
 /*** DEVCFG3 ***/
 
-#pragma config USERID =     0x0000
+#pragma config USERID =     0xffff
 #pragma config PMDL1WAY =   OFF
 #pragma config IOL1WAY =    OFF
 #pragma config FUSBIDIO =   ON

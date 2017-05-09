@@ -58,10 +58,10 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include <stdlib.h>
 #include "system_config.h"
 #include "system_definitions.h"
-#include "i2c_master_noint.h"
-#include "ILI9163C.h"
-#include "TFTLCD.h"
-#include "LSM6DS333.h"
+#include "../HW8.X/LSM6DS333.h"
+#include "../HW8.X/ILI9163C.h"
+#include "../HW8.X/TFTLCD.h"
+#include "../HW8.X/I2C.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -77,7 +77,6 @@ extern "C" {
 // *****************************************************************************
 // *****************************************************************************
 #define STRINGLENGTH 100
-
 // *****************************************************************************
 /* Application states
 
