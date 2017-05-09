@@ -11,7 +11,7 @@
 
 int main() {
     unsigned char dataReg8[STRINGLENGTH];
-    short dataReg16[STRINGLENGTH];
+    // short dataReg16[STRINGLENGTH];
     char str1[STRINGLENGTH];
     int i;
     float Gx,Gy;
@@ -36,9 +36,9 @@ int main() {
         Gy = getyXL(dataReg8);
         /*
         sprintf(str1,"Gx = %1.3f!",Gx);
-        LCD_drawString(20,32,str1,BLUE); //String
+        LCD_drawString(10,10,str1,BLUE); //String
         sprintf(str1,"Gy = %1.3f!",Gy);
-        LCD_drawString(20,42,str1,BLUE); //String
+        LCD_drawString(10,20,str1,BLUE); //String
         */
         LCD_drawGravCross(Gx,Gy,WHITE);
     }

@@ -4,6 +4,11 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>i2c_master_noint.h</itemPath>
+      <itemPath>config.h</itemPath>
+      <itemPath>ILI9163C.h</itemPath>
+      <itemPath>LSM6DS333.h</itemPath>
+      <itemPath>TFTLCD.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -13,6 +18,10 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>main.c</itemPath>
+      <itemPath>TFTLCD.c</itemPath>
+      <itemPath>LSM6DS333.c</itemPath>
+      <itemPath>ILI9163C.c</itemPath>
+      <itemPath>i2c_master_noint.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
