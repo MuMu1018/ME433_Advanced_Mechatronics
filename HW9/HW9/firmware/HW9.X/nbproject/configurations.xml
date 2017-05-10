@@ -19,8 +19,29 @@
           </logicalFolder>
         </logicalFolder>
         <itemPath>../src/app.h</itemPath>
+        <itemPath>../src/ILI9163C.h</itemPath>
+        <itemPath>../src/TFTLCD.h</itemPath>
+        <itemPath>../src/I2C.h</itemPath>
+        <itemPath>../src/LSM6DS333.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="framework" projectFiles="true">
+        <logicalFolder name="f5" displayName="driver" projectFiles="true">
+          <logicalFolder name="f1" displayName="usb" projectFiles="true">
+            <logicalFolder name="f2" displayName="usbfs" projectFiles="true">
+              <logicalFolder name="f1" displayName="src" projectFiles="true">
+                <itemPath>../../../../../../microchip/harmony/v1_11/framework/driver/usb/usbfs/src/drv_usbfs_local.h</itemPath>
+                <itemPath>../../../../../../microchip/harmony/v1_11/framework/driver/usb/usbfs/src/drv_usbfs_variant_mapping.h</itemPath>
+              </logicalFolder>
+              <itemPath>../../../../../../microchip/harmony/v1_11/framework/driver/usb/usbfs/drv_usbfs.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v1_11/framework/driver/usb/usbfs/drv_usbfs_mapping.h</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v1_11/framework/driver/usb/usbfs/drv_usbfs_static.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="usbhs" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v1_11/framework/driver/usb/usbhs/drv_usbhs.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../microchip/harmony/v1_11/framework/driver/usb/drv_usb.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
         <logicalFolder name="f1" displayName="gfx" projectFiles="true">
           <itemPath>../../../../../../microchip/harmony/v1_11/framework/gfx/gfx_palette.h</itemPath>
         </logicalFolder>
@@ -57,10 +78,30 @@
             </logicalFolder>
             <itemPath>../../../../../../microchip/harmony/v1_11/framework/system/devcon/sys_devcon.h</itemPath>
           </logicalFolder>
-          <logicalFolder name="f5" displayName="ports" projectFiles="true">
+          <logicalFolder name="f5" displayName="int" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v1_11/framework/system/int/src/sys_int_private.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../microchip/harmony/v1_11/framework/system/int/sys_int.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v1_11/framework/system/int/sys_int_mapping.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f6" displayName="ports" projectFiles="true">
             <itemPath>../../../../../../microchip/harmony/v1_11/framework/system/ports/sys_ports.h</itemPath>
           </logicalFolder>
           <itemPath>../../../../../../microchip/harmony/v1_11/framework/system/system.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f6" displayName="usb" projectFiles="true">
+          <logicalFolder name="f1" displayName="src" projectFiles="true">
+            <itemPath>../../../../../../microchip/harmony/v1_11/framework/usb/src/usb_device_local.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v1_11/framework/usb/src/usb_device_mapping.h</itemPath>
+            <itemPath>../../../../../../microchip/harmony/v1_11/framework/usb/src/usb_device_cdc_local.h</itemPath>
+          </logicalFolder>
+          <itemPath>../../../../../../microchip/harmony/v1_11/framework/usb/usb_device.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v1_11/framework/usb/usb_billboard.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v1_11/framework/usb/usb_chapter_9.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v1_11/framework/usb/usb_common.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v1_11/framework/usb/usb_cdc.h</itemPath>
+          <itemPath>../../../../../../microchip/harmony/v1_11/framework/usb/usb_device_cdc.h</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
@@ -96,13 +137,43 @@
         </logicalFolder>
         <itemPath>../src/app.c</itemPath>
         <itemPath>../src/main.c</itemPath>
+        <itemPath>LSM6DS333.c</itemPath>
+        <itemPath>I2C.c</itemPath>
+        <itemPath>../src/ILI9163C.c</itemPath>
+        <itemPath>../src/TFTLCD.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="framework" projectFiles="true">
+        <logicalFolder name="f2" displayName="driver" projectFiles="true">
+          <logicalFolder name="f1" displayName="usb" projectFiles="true">
+            <logicalFolder name="f1" displayName="usbfs" projectFiles="true">
+              <logicalFolder name="f1" displayName="src" projectFiles="true">
+                <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
+                  <itemPath>../../../../../../microchip/harmony/v1_11/framework/driver/usb/usbfs/src/dynamic/drv_usbfs.c</itemPath>
+                  <itemPath>../../../../../../microchip/harmony/v1_11/framework/driver/usb/usbfs/src/dynamic/drv_usbfs_device.c</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
         <logicalFolder name="f1" displayName="system" projectFiles="true">
           <logicalFolder name="f1" displayName="devcon" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <itemPath>../../../../../../microchip/harmony/v1_11/framework/system/devcon/src/sys_devcon.c</itemPath>
               <itemPath>../../../../../../microchip/harmony/v1_11/framework/system/devcon/src/sys_devcon_pic32mx.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="int" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v1_11/framework/system/int/src/sys_int_pic32.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="usb" projectFiles="true">
+          <logicalFolder name="f1" displayName="src" projectFiles="true">
+            <logicalFolder name="f1" displayName="dynamic" projectFiles="true">
+              <itemPath>../../../../../../microchip/harmony/v1_11/framework/usb/src/dynamic/usb_device.c</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v1_11/framework/usb/src/dynamic/usb_device_cdc.c</itemPath>
+              <itemPath>../../../../../../microchip/harmony/v1_11/framework/usb/src/dynamic/usb_device_cdc_acm.c</itemPath>
             </logicalFolder>
           </logicalFolder>
         </logicalFolder>
@@ -130,8 +201,8 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>PICkit3PlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>1.43</languageToolchainVersion>
-        <platform>3</platform>
+        <languageToolchainVersion>1.40</languageToolchainVersion>
+        <platform>4</platform>
       </toolsSet>
       <compileType>
         <linkerTool>
@@ -287,6 +358,7 @@
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
         <property key="UART1" value="true"/>
         <property key="UART2" value="true"/>
+        <property key="firmware.download.all" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
