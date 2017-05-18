@@ -486,8 +486,7 @@ void APP_Tasks(void) {
             //fprintf(f,"\r%3d %3.3f %3.3f %3.3f %3.3f \r\n",count,Az,MAFbuffer[count],aver_IIR,FIRbuffer[count]);
             
             len = sprintf(dataOut,"\r%3d %3.3f %3.3f %3.3f %3.3f \r\n",count,RAW,MAF,aver_IIR,FIR);
-            //len = sprintf(dataOut,"\r%3d %3.3f\r\n",count,Az);
-            //
+            
             count++;
             
             if (appData.isReadComplete) {
