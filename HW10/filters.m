@@ -10,7 +10,7 @@ fopen(s);
 fprintf(s,'r\n');
 
 for i=1:99
-	temp = fscanf(s,'%d %f %f %f %f');
+	temp = fscanf(s,'%d %f');
     if(i>1)
         data(i-1)={temp};
 end
