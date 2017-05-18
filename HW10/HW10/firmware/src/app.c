@@ -70,10 +70,10 @@ int stop = true;
 int startTime = 0;
 int j = 0;
 
-float Az = 0.0;
+float RAW = 0.0,MAF = 0.0,FIR = 0.0;
 float aver_IIR = 0.0, prev_IIR = 0.0, new_IIR = 0.0;
-float MAFbuffer[N_SAMPLE],FIRbuffer[N_SAMPLE];
 float FIR_COEF[FIR_SCALAR]={0.01,0.02,0.03,0.04,0.1,0.12,0.14,0.16,0.18,0.2};
+float data_buffer[MAF_SCALAR]={0,0,0,0,0,0,0,0,0,0};
 unsigned char dataReg8[STRINGLENGTH];
 FILE *f;
 
@@ -353,16 +353,10 @@ void APP_Initialize(void) {
     SPI1_init();
     //LCD_init();
     //LCD_clearScreen(BACKGROUND);
-    for(count = 0; count < N_SAMPLE; count++){
-        MAFbuffer[count] = 0.0;
-        FIRbuffer[count] = 0.0;
-    }
     for(count = 0; count < STRINGLENGTH; count++){
         dataReg8[count] = 0;
     }
     count = 0;
-    
-    f = fopen("/Users/mengjiaohong/GitHub/Mengjiao_ME433_2017/HW10/data.txt","a+");
     
     LATAbits.LATA4 = 1; // turn LED on
     startTime = _CP0_GET_COUNT();
@@ -462,36 +456,37 @@ void APP_Tasks(void) {
             appData.state = APP_STATE_WAIT_FOR_WRITE_COMPLETE;
 
             I2C_read_multiple(IMU_ADDR, 0x20, dataReg8, 14);
-            Az = getzXL(dataReg8);  //read Z axis accelerometer data 
+            RAW = getzXL(dataReg8);  //read Z axis accelerometer data 
             
+            data_buffer[count%10] = RAW;
             // IIR filter
-            new_IIR = Az;
+            new_IIR = RAW;
             aver_IIR = IIR_COEF*prev_IIR + (1-IIR_COEF)*new_IIR;
             prev_IIR = aver_IIR;
             
             // MAF filter
-            MAFbuffer[count] = Az;
+            MAF = RAW;
             if (count >= MAF_SCALAR-1){
                 for (j=1;j<MAF_SCALAR;j++){
-                    MAFbuffer[count] += MAFbuffer[count-j];
+                    MAF += data_buffer[(count-j)%10];
                 }
-                MAFbuffer[count] /= (float)MAF_SCALAR;
+                MAF /= (float)MAF_SCALAR;
             }
             
             // FIR filter
-            FIRbuffer[count] = Az;
+            FIR = RAW;
             if (count >= FIR_SCALAR-1){
-                FIRbuffer[count] = Az*FIR_COEF[FIR_SCALAR-1];
+                FIR = RAW*FIR_COEF[FIR_SCALAR-1];
                 for (j=1;j<FIR_SCALAR;j++){
-                    FIRbuffer[count] += FIRbuffer[count-j]*
+                    FIR += data_buffer[(count-j)%10]*
                             FIR_COEF[FIR_SCALAR-1-j];
                 }
             }
             
             //fprintf(f,"\r%3d %3.3f %3.3f %3.3f %3.3f \r\n",count,Az,MAFbuffer[count],aver_IIR,FIRbuffer[count]);
             
-            //len = sprintf(dataOut,"\r%3d %3.3f %3.3f %3.3f %3.3f \r\n",count,Az,MAFbuffer[count],aver_IIR,FIRbuffer[count]);
-            len = sprintf(dataOut,"\r%3d %3.3f\r\n",count,Az);
+            len = sprintf(dataOut,"\r%3d %3.3f %3.3f %3.3f %3.3f \r\n",count,RAW,MAF,aver_IIR,FIR);
+            //len = sprintf(dataOut,"\r%3d %3.3f\r\n",count,Az);
             //
             count++;
             

@@ -9,10 +9,10 @@ s = serial(port);
 fopen(s);
 fprintf(s,'r\n');
 
-for i=1:99
-	temp = fscanf(s,'%d %f');
+for i=1:100
+	temp = fscanf(s,'\r%d %f %f %f %f\r\n');
     if(i>1)
-        data(i-1)={temp};
+    data(i)={temp};
 end
 %cell2mat(data)
 
