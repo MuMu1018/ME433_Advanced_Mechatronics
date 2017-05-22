@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration version="1.0.10.0">
+  <DisplayManager>
+    <SystemInitScript/>
+    <SystemStartScript/>
+  </DisplayManager>
+  <General>
+    <HarmonyPath path="../../../../microchip/harmony/v1_11"/>
+    <Processor name=""/>
+    <ForceOptimization flag="true"/>
+    <MergeStrategy flag="USER_ALL"/>
+  </General>
+  <Manifest>
+    <Files>
+      <File>
+        <Name>osal_impl_basic.h</Name>
+        <Path>Header Files/framework/osal/src</Path>
+      </File>
+      <File>
+        <Name>peripheral_common_32bit.h</Name>
+        <Path>Header Files/framework/peripheral</Path>
+      </File>
+      <File>
+        <Name>usb_billboard.h</Name>
+        <Path>Header Files/framework/usb</Path>
+      </File>
+      <File>
+        <Name>drv_usbfs.c</Name>
+        <Path>Source Files/framework/driver/usb/usbfs/src/dynamic</Path>
+      </File>
+      <File>
+        <Name>drv_usbfs_local.h</Name>
+        <Path>Header Files/framework/driver/usb/usbfs/src</Path>
+      </File>
+      <File>
+        <Name>sys_devcon.c</Name>
+        <Path>Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File>
+        <Name>usb_hid.h</Name>
+        <Path>Header Files/framework/usb</Path>
+      </File>
+      <File>
+        <Name>osal.h</Name>
+        <Path>Header Files/framework/osal</Path>
+      </File>
+      <File>
+        <Name>usb_device_hid_local.h</Name>
+        <Path>Header Files/framework/usb/src</Path>
+      </File>
+      <File>
+        <Name>drv_usbhs.h</Name>
+        <Path>Header Files/framework/driver/usb/usbhs</Path>
+      </File>
+      <File>
+        <Name>drv_usbfs_static.h</Name>
+        <Path>Header Files/framework/driver/usb/usbfs</Path>
+      </File>
+      <File>
+        <Name>usb_device_local.h</Name>
+        <Path>Header Files/framework/usb/src</Path>
+      </File>
+      <File>
+        <Name>usb_common.h</Name>
+        <Path>Header Files/framework/usb</Path>
+      </File>
+      <File>
+        <Name>sys_ports.h</Name>
+        <Path>Header Files/framework/system/ports</Path>
+      </File>
+      <File>
+        <Name>usb_device_hid.c</Name>
+        <Path>Source Files/framework/usb/src/dynamic</Path>
+      </File>
+      <File>
+        <Name>usb_chapter_9.h</Name>
+        <Path>Header Files/framework/usb</Path>
+      </File>
+      <File>
+        <Name>peripheral_common.h</Name>
+        <Path>Header Files/framework/peripheral</Path>
+      </File>
+      <File>
+        <Name>sys_common.h</Name>
+        <Path>Header Files/framework/system/common</Path>
+      </File>
+      <File>
+        <Name>sys_buffer.h</Name>
+        <Path>Header Files/framework/system/common</Path>
+      </File>
+      <File>
+        <Name>sys_int_pic32.c</Name>
+        <Path>Source Files/framework/system/int/src</Path>
+      </File>
+      <File>
+        <Name>usb_device_mapping.h</Name>
+        <Path>Header Files/framework/usb/src</Path>
+      </File>
+      <File>
+        <Name>usb_device.c</Name>
+        <Path>Source Files/framework/usb/src/dynamic</Path>
+      </File>
+      <File>
+        <Name>usb_device_hid.h</Name>
+        <Path>Header Files/framework/usb</Path>
+      </File>
+      <File>
+        <Name>sys_clk.h</Name>
+        <Path>Header Files/framework/system/clk</Path>
+      </File>
+      <File>
+        <Name>osal_impl_none.h</Name>
+        <Path>Header Files/framework/osal/src</Path>
+      </File>
+      <File>
+        <Name>sys_clk_mapping.h</Name>
+        <Path>Header Files/framework/system/clk</Path>
+      </File>
+      <File>
+        <Name>osal_definitions.h</Name>
+        <Path>Header Files/framework/osal</Path>
+      </File>
+      <File>
+        <Name>sys_int_mapping.h</Name>
+        <Path>Header Files/framework/system/int</Path>
+      </File>
+      <File>
+        <Name>usb_device.h</Name>
+        <Path>Header Files/framework/usb</Path>
+      </File>
+      <File>
+        <Name>gfx_palette.h</Name>
+        <Path>Header Files/framework/gfx</Path>
+      </File>
+      <File>
+        <Name>sys_int_private.h</Name>
+        <Path>Header Files/framework/system/int/src</Path>
+      </File>
+      <File>
+        <Name>sys_devcon.h</Name>
+        <Path>Header Files/framework/system/devcon</Path>
+      </File>
+      <File>
+        <Name>system.h</Name>
+        <Path>Header Files/framework/system</Path>
+      </File>
+      <File>
+        <Name>drv_usbfs_device.c</Name>
+        <Path>Source Files/framework/driver/usb/usbfs/src/dynamic</Path>
+      </File>
+      <File>
+        <Name>sys_debug.h</Name>
+        <Path>Header Files/framework/system/debug</Path>
+      </File>
+      <File>
+        <Name>sys_module.h</Name>
+        <Path>Header Files/framework/system/common</Path>
+      </File>
+      <File>
+        <Name>sys_devcon_pic32mx.c</Name>
+        <Path>Source Files/framework/system/devcon/src</Path>
+      </File>
+      <File>
+        <Name>drv_usbfs.h</Name>
+        <Path>Header Files/framework/driver/usb/usbfs</Path>
+      </File>
+      <File>
+        <Name>sys_devcon_local.h</Name>
+        <Path>Header Files/framework/system/devcon/src</Path>
+      </File>
+      <File>
+        <Name>drv_usbfs_variant_mapping.h</Name>
+        <Path>Header Files/framework/driver/usb/usbfs/src</Path>
+      </File>
+      <File>
+        <Name>peripheral.h</Name>
+        <Path>Header Files/framework/peripheral</Path>
+      </File>
+      <File>
+        <Name>sys_queue.h</Name>
+        <Path>Header Files/framework/system/common</Path>
+      </File>
+      <File>
+        <Name>sys_int.h</Name>
+        <Path>Header Files/framework/system/int</Path>
+      </File>
+      <File>
+        <Name>drv_usbfs_mapping.h</Name>
+        <Path>Header Files/framework/driver/usb/usbfs</Path>
+      </File>
+      <File>
+        <Name>drv_usb.h</Name>
+        <Path>Header Files/framework/driver/usb</Path>
+      </File>
+    </Files>
+    <Templates>
+      <Template>
+        <Name>sys_ports_static.c</Name>
+        <Path>Source Files/app/system_config/default/framework/system/ports/src</Path>
+        <Checksum>EB4E6E052E36EB2876E06665D549BB5D</Checksum>
+      </Template>
+      <Template>
+        <Name>system_init.c</Name>
+        <Path>Source Files/app/system_config/default</Path>
+        <Checksum>DB984B7D3A6D12963805149DC260143E</Checksum>
+      </Template>
+      <Template>
+        <Name>main.c</Name>
+        <Path>Source Files/app</Path>
+      </Template>
+      <Template>
+        <Name>system_tasks.c</Name>
+        <Path>Source Files/app/system_config/default</Path>
+        <Checksum>C051440866B3433982D20908212CADC7</Checksum>
+      </Template>
+      <Template>
+        <Name>system_config.h</Name>
+        <Path>Header Files/app/system_config/default</Path>
+        <Checksum>F3B9BCF06F00F2013B85D93CB6CF0CFD</Checksum>
+      </Template>
+      <Template>
+        <Name>system_definitions.h</Name>
+        <Path>Header Files/app/system_config/default</Path>
+        <Checksum>5902D934BE2F1D8885B79305A30F5AE9</Checksum>
+      </Template>
+      <Template>
+        <Name>system_exceptions.c</Name>
+        <Path>Source Files/app/system_config/default</Path>
+        <Checksum>C111969CA43D6CEA1E9E33A6164E7AE0</Checksum>
+      </Template>
+      <Template>
+        <Name>app.h</Name>
+        <Path>Header Files/app</Path>
+      </Template>
+      <Template>
+        <Name>sys_clk_static.h</Name>
+        <Path>Header Files/app/system_config/default/framework/system/clk</Path>
+        <Checksum>B4BD59D8D7C4DA95DC5E3B57755FD352</Checksum>
+      </Template>
+      <Template>
+        <Name>system_interrupt.c</Name>
+        <Path>Source Files/app/system_config/default</Path>
+        <Checksum>61C11F06F103735D7B3984C54A722725</Checksum>
+      </Template>
+      <Template>
+        <Name>sys_clk_static.c</Name>
+        <Path>Source Files/app/system_config/default/framework/system/clk/src</Path>
+        <Checksum>6AF033A7E8ECB69981D88ED27526EF17</Checksum>
+      </Template>
+      <Template>
+        <Name>app.c</Name>
+        <Path>Source Files/app</Path>
+      </Template>
+    </Templates>
+    <CompilerItems>
+      <C32>
+        <Include value="/Users/mengjiaohong/GitHub/Mengjiao_ME433_2017/HW11/HW11/firmware/src"/>
+        <Include value="/Users/mengjiaohong/GitHub/Mengjiao_ME433_2017/HW11/HW11/firmware/src/system_config/default"/>
+        <Include value="/Users/mengjiaohong/GitHub/Mengjiao_ME433_2017/HW11/HW11/firmware/src/default"/>
+        <Include value="/Users/mengjiaohong/microchip/harmony/v1_11/framework"/>
+        <Include value="/Users/mengjiaohong/GitHub/Mengjiao_ME433_2017/HW11/HW11/firmware/src/system_config/default/framework"/>
+      </C32>
+    </CompilerItems>
+    <Libraries>
+      <Library value="../../../../../../microchip/harmony/v1_11/bin/framework/peripheral/PIC32MX250F128B_peripherals.a"/>
+    </Libraries>
+  </Manifest>
+</configuration>
