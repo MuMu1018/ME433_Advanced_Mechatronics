@@ -75,7 +75,6 @@ float aver_IIR = 0.0, prev_IIR = 0.0, new_IIR = 0.0;
 float FIR_COEF[FIR_SCALAR]={0.01,0.02,0.03,0.04,0.1,0.12,0.14,0.16,0.18,0.2};
 float data_buffer[MAF_SCALAR]={0,0,0,0,0,0,0,0,0,0};
 unsigned char dataReg8[STRINGLENGTH];
-FILE *f;
 
 // *****************************************************************************
 /* Application Data
