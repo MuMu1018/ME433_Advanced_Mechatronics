@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 0x04D8 / 0x000A: PIC32 Microchip CDC Example -->
+    <usb-device vendor-id="1240" product-id="10" />
+</resources>
