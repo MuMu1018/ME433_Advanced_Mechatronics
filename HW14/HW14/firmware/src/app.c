@@ -215,7 +215,7 @@ void APP_USBDeviceEventHandler(USB_DEVICE_EVENT event, void * eventData, uintptr
 
         case USB_DEVICE_EVENT_CONFIGURED:
 
-            /* Check the configuratio. We only support configuration 1 */
+            /* Check the configuration. We only support configuration 1 */
             configuredEventData = (USB_DEVICE_EVENT_DATA_CONFIGURED*) eventData;
             if (configuredEventData->configurationValue == 1) {
                 /* Update LED to show configured state */
@@ -322,7 +322,7 @@ void APP_Initialize(void) {
     /* Write Transfer Handle */
     appData.writeTransferHandle = USB_DEVICE_CDC_TRANSFER_HANDLE_INVALID;
 
-    /* Intialize the read complete flag */
+    /* Initialize the read complete flag */
     appData.isReadComplete = true;
 
     /*Initialize the write complete flag*/

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mengjiaohong.myapplication.MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera App"
+                android:id="@+id/cameraStatus"/>
+
+
+            <SeekBar
+                android:id="@+id/seek1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:progress="20"
+                android:secondaryProgress="20"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <SeekBar
+                android:id="@+id/seek2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:progress="20"
+                android:secondaryProgress="20"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:id="@+id/textView01"
+                android:text="initial value "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send slider value" />
+
+            <TextView
+                android:id="@+id/textView02"
+                android:text="nothing from button yet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <ScrollView
+                android:id="@+id/ScrollView01"
+                android:layout_width="wrap_content"
+                android:layout_height="250dip">
+
+                <TextView
+                    android:id="@+id/textView03"
+                    android:text="nothing from usb yet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_green_light"
+                    />
+            </ScrollView>
+
+            <SurfaceView
+                android:id="@+id/surfaceview"
+                android:layout_width="320dp"
+                android:layout_height="200dp" />
+
+            <TextureView
+                android:id="@+id/textureview"
+                android:layout_width="320dp"
+                android:layout_height="200dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
