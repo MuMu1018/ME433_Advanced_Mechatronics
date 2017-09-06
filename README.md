@@ -23,7 +23,8 @@ This homework is the first half of [HW3](https://github.com/ndm736/ME433_2017/wi
 
 HW3 assignment description [here](https://github.com/ndm736/ME433_2017/wiki/HW3). My homework folder [here](https://github.com/MuMu1018/Mengjiao_ME433_2017/tree/master/HW3).
 
-We create a PCB of our PIC32 circuit, 5cm x 5cm, with header pins at specific locations. Do all of the error checking, generate the Gerber files.
+We create a PCB of our PIC32 circuit, 5cm x 5cm, with header pins at specific locations. Do all of the error checking, generate the Gerber files. This is my design:
+![PCB board](https://github.com/MuMu1018/Mengjiao_ME433_2017/blob/master/HW3/PCB%20board_Mengjiao.png)
 
 # HW4 - SPI DAC
 
@@ -45,6 +46,9 @@ The DAC outputs:
 HW5 assignment description [here](https://github.com/ndm736/ME433_2017/wiki/HW5). My homework folder [here](https://github.com/MuMu1018/Mengjiao_ME433_2017/tree/master/HW5).
 
 Here's a schematic showing the connections between our PIC32 and the MCP23008 I/O expander ([datasheet for MCP23008](https://github.com/ndm736/ME433_2017/blob/master/mcp23008_i2c-expander.pdf)) using I2C communication.
+
 ![I2C schematic](https://github.com/MuMu1018/Mengjiao_ME433_2017/blob/master/HW5/ME433_HW5.pdf)
+
+
 
 
