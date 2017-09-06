@@ -8,7 +8,7 @@ Course Source: https://github.com/ndm736/ME433_2017/wiki
 HW1 assignment description [here](https://github.com/ndm736/ME433_2017/wiki/HW1). My homework [folder](https://github.com/MuMu1018/Mengjiao_ME433_2017/tree/master/HW1).
 
 This is my breadboard PIC32 circuit
-(https://github.com/MuMu1018/Mengjiao_ME433_2017/blob/master/HW1/FullSizeRender.jpg)
+![breadboard PIC32 circuit](https://github.com/MuMu1018/Mengjiao_ME433_2017/blob/master/HW1/FullSizeRender.jpg)
 
 Test demo: a blinking LED (at 1 kHz), that stops when pushing and holding the USER pushbutton, and continues when releasings.
 
