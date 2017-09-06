@@ -31,7 +31,7 @@ We create a PCB of our PIC32 circuit, 5cm x 5cm, with header pins at specific lo
 HW4 assignment description [here](https://github.com/ndm736/ME433_2017/wiki/HW4). My homework folder [here](https://github.com/MuMu1018/Mengjiao_ME433_2017/tree/master/HW4).
 
 Here's a schematic showing the connections between our PIC32 and this particular DAC ([the MCP4902](https://github.com/ndm736/ME433_2017/blob/master/mcp4902_spi-dac.pdf)) using SPI communication. The DAC outputs on pins V_OUTA (14) and V_OUTB (10).
-![DAC schematic](https://github.com/MuMu1018/Mengjiao_ME433_2017/blob/master/HW4/SPI%20circuit%20schematic.pdf)
+![DAC schematic](https://github.com/MuMu1018/Mengjiao_ME433_2017/blob/master/HW4/SPI%20circuit%20schematic.png)
 
 The DAC outputs:
 
@@ -47,7 +47,7 @@ HW5 assignment description [here](https://github.com/ndm736/ME433_2017/wiki/HW5)
 
 Here's a schematic showing the connections between our PIC32 and the MCP23008 I/O expander ([datasheet for MCP23008](https://github.com/ndm736/ME433_2017/blob/master/mcp23008_i2c-expander.pdf)) using I2C communication.
 
-![I2C schematic](https://github.com/MuMu1018/Mengjiao_ME433_2017/blob/master/HW5/ME433_HW5.pdf)
+![I2C schematic](https://github.com/MuMu1018/Mengjiao_ME433_2017/blob/master/HW5/ME433_HW5.png)
 
 
 # HW6 
