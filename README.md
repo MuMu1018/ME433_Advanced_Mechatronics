@@ -50,11 +50,13 @@ Here's a schematic showing the connections between our PIC32 and the MCP23008 I/
 ![I2C schematic](https://github.com/MuMu1018/Mengjiao_ME433_2017/blob/master/HW5/I2C%20schematic.png)
 
 
-# HW6 - print words on LCD screen with a progress bar
+# HW6 - LCD screen printing
 
 HW6 assignment description [here](https://github.com/ndm736/ME433_2017/wiki/HW6). My homework folder [here](https://github.com/MuMu1018/Mengjiao_ME433_2017/tree/master/HW6).
 
-# HW7 - control the bar on LCD screen with rotating LSM6DS33 breakout board (I2C)
+# HW7 - LCD Flowing Bar Control with LSM6DS33 breakout board 
+
+Control the flowing bar on LCD screen by rotating LSM6DS33 breakout board, with I2C connection.
 
 HW7 assignment description [here](https://github.com/ndm736/ME433_2017/wiki/HW7). My homework folder [here](https://github.com/MuMu1018/Mengjiao_ME433_2017/tree/master/HW7).
 
