@@ -83,13 +83,16 @@ Final project assignment description [here](https://github.com/ndm736/ME433_2017
 
 Car body design with **SolidWorks**, and fabricate using **3D printing** and **laser cutting**:
 
-+ Bracket:
++ Bracket (3D printing):
 <img src="HW20/CarDesign/Bracket/Bracket%20(3D%20print).png" width="266" height="217" />
 <img src="HW20/CarDesign/Bracket/Bracket%20(3D%20print).JPG" width="278" height="261" />
 
-+ Wheels:
++ Wheels (3D printing):
 <img src="HW20/CarDesign/Carwheel/Carwheel%20(3D%20print).png" width="284" height="237" />
 <img src="HW20/CarDesign/Carwheel/Carwheel.JPG" width="270" height="480" />
+
++ Car body (Laser cutting):
+<img src="HW20/CarDesign/Carbody/carbody1.png" width="270" height="480" />
 
 + Whole car:
 <img src="HW20/CarDesign/Car.JPG" width="504" height="378" />
