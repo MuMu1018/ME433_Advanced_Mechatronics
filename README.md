@@ -84,14 +84,15 @@ Final project assignment description [here](https://github.com/ndm736/ME433_2017
 Car body design using **SolidWorks** and **3D printer**:
 
 Bracket:
-<img src="HW20/CarDesign/Bracket/Bracket%20(3D%20print).png" width="532" height="435" />
-<img src="HW20/CarDesign/Bracket/Bracket%20(3D%20print).JPG" width="556" height="522" />
+
+<img src="HW20/CarDesign/Bracket/Bracket%20(3D%20print).png" width="266" height="217" />
+<img src="HW20/CarDesign/Bracket/Bracket%20(3D%20print).JPG" width="278" height="261" />
 
 Wheels:
-<img src="HW20/CarDesign/Carwheel/Carwheel%20(3D%20print).png" width="568" height="475" />
-<img src="HW20/CarDesign/Carwheel/Carwheel.JPG" width="540" height="960" />
+<img src="HW20/CarDesign/Carwheel/Carwheel%20(3D%20print).png" width="284" height="237" />
+<img src="HW20/CarDesign/Carwheel/Carwheel.JPG" width="270" height="480" />
 
 Whole car:
-<img src="HW20/CarDesign/Car.JPG" width="1008" height="756" />
+<img src="HW20/CarDesign/Car.JPG" width="504" height="378" />
 
 
