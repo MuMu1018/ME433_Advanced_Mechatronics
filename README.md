@@ -82,9 +82,16 @@ From the records, I find that IIR is better for tracking, while MAF and FIR filt
 Final project assignment description [here](https://github.com/ndm736/ME433_2017/wiki/HW20). My Android code is in [this](https://github.com/MuMu1018/Mengjiao_ME433_2017/tree/master/HW20) folder.
 
 Car body design using **SolidWorks** and **3D printer**:
-<img src="HW20/CarDesign/Bracket/Bracket%20(3D%20print).png" width="360" height="255" />
-<img src="HW20/CarDesign/Carwheel/Carwheel%20(3D%20print).png" width="360" height="255" />
-<img src="HW20/CarDesign/Carwheel/Carwheel.JPG" width="360" height="255" />
-<img src="HW20/CarDesign/Car.JPG" width="360" height="255" />
+
+Bracket:
+<img src="HW20/CarDesign/Bracket/Bracket%20(3D%20print).png" width="532" height="435" />
+<img src="HW20/CarDesign/Bracket/Bracket%20(3D%20print).JPG" width="556" height="522" />
+
+Wheels:
+<img src="HW20/CarDesign/Carwheel/Carwheel%20(3D%20print).png" width="568" height="475" />
+<img src="HW20/CarDesign/Carwheel/Carwheel.JPG" width="540" height="960" />
+
+Whole car:
+<img src="HW20/CarDesign/Car.JPG" width="1008" height="756" />
 
 
