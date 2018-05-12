@@ -60,4 +60,31 @@ Control the flowing bar on LCD screen by rotating LSM6DS33 breakout board, with 
 
 HW7 assignment description [here](https://github.com/ndm736/ME433_2017/wiki/HW7). My homework folder [here](https://github.com/MuMu1018/Mengjiao_ME433_2017/tree/master/HW7).
 
+## HW8 - recreate HW7 project in MPLABX 
+
+Use harmony to create a project for the PIC in MPLABX. 
+
+HW8 assignment description [here](https://github.com/ndm736/ME433_2017/wiki/HW8). My homework folder [here](https://github.com/MuMu1018/Mengjiao_ME433_2017/tree/master/HW8).
+
+## HW9 - USB communication between the PIC & PC
+
+HW9 assignment description [here](https://github.com/ndm736/ME433_2017/wiki/HW9). My homework folder [here](https://github.com/MuMu1018/Mengjiao_ME433_2017/tree/master/HW9).
+
+## HW10 - IIR, MAF and FIR low-pass filters
+
+HW10 assignment description [here](https://github.com/ndm736/ME433_2017/wiki/HW10). My homework folder [here](https://github.com/MuMu1018/Mengjiao_ME433_2017/tree/master/HW10).
+
+From the records, I find that IIR is better for tracking, while MAF and FIR filters are better in reducing noises.
+![filters_1](https://github.com/MuMu1018/Mengjiao_ME433_2017/blob/master/HW10/HW10%20filters.jpg)
+
+## Final project
+
+Final project assignment description [here](https://github.com/ndm736/ME433_2017/wiki/HW20). My Android code is in [this](https://github.com/MuMu1018/Mengjiao_ME433_2017/tree/master/HW20) folder.
+
+Car body design using **SolidWorks** and **3D printer**:
+<img src="HW20/CarDesign/Bracket/Bracket%20(3D%20print).png" width="360" height="255" />
+<img src="HW20/CarDesign/Carwheel/Carwheel%20(3D%20print).png" width="360" height="255" />
+<img src="HW20/CarDesign/Carwheel/Carwheel.JPG" width="360" height="255" />
+<img src="HW20/CarDesign/Car.JPG" width="360" height="255" />
+
 
