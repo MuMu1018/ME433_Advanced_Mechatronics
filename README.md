@@ -92,7 +92,7 @@ Car body design with **SolidWorks**, and fabricate using **3D printing** and **l
 <img src="HW20/CarDesign/Carwheel/Carwheel.JPG" width="270" height="480" />
 
 + Car body (Laser cutting):
-<img src="HW20/CarDesign/Carbody/carbody1.png" width="298" height="120" />
+<img src="HW20/CarDesign/Carbody/carbody1.png" width="298" height="194" />
 <img src="HW20/CarDesign/Carbody/carbody2.png" width="258" height="193" />
 <img src="HW20/CarDesign/Carbody/carbody3.png" width="248" height="143" />
 
