@@ -103,5 +103,6 @@ Car body design with **SolidWorks**, and fabricate using **3D printing** and **l
 <img src="HW20/CarDesign/Car.JPG" width="504" height="378" />
 
 + Video: 
+
 [![car_robot](https://img.youtube.com/vi/fW-3yXjabRs/0.jpg)](https://www.youtube.com/watch?v=fW-3yXjabRs)
 
