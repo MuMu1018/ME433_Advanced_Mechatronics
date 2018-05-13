@@ -100,7 +100,7 @@ Car body design with **SolidWorks**, and fabricate using **3D printing** and **l
 <img src="HW20/CarDesign/Car.JPG" width="504" height="378" />
 
 + Map info:
-<img src="HW20/CarDesign/Car.JPG" width="504" height="378" />
+<img src="HW20/Map/techCup2017.png" width="306" height="301" />
 
 + Video: 
 
